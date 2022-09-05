@@ -4,14 +4,14 @@ class Counter extends Component {
         count: 0,
         imgUrl: "https://picsum.photos/200"
     };
-    style = {
-        fontSize: 20,
-        fontWeight: "bold"
-    }
+    // style = {
+    //     fontSize: 20,
+    //     fontWeight: "bold"
+    // }
     render() {
         return (
             <React.Fragment>
-                <span style={this.style} className='badge badge-primary m-2'>{this.countOption()}</span>
+                <span style={{ fontSize: 50 }} className='badge badge-primary m-2'>{this.countOption()}</span>
                 <button className='btn btn-secondary btn-sm'>Increament</button>
             </React.Fragment>
         );
