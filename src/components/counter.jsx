@@ -7,16 +7,16 @@ class Counter extends Component {
     render() {
         return (
             <React.Fragment>
-                {/* <span>Hello World! {this.countOption()} times</span> */}
-                {/* <button>Increament</button> */}
-                <img src={this.state.imgUrl} alt="" />
+                <span className='badge badge-primary m-2'>{this.countOption()}</span>
+                <button className='btn btn-secondary btn-sm'>Increament</button>
+                {/* <img src={this.state.imgUrl} alt="" /> */}
             </React.Fragment>
         );
     }
-    // countOption() {
-    //     let num = this.state.count;
-    //     return num === 0 ? <h1>Zero</h1> : <h1>{num}</h1>;
-    // }
+    countOption() {
+        let num = this.state.count;
+        return num === 0 ? 'Zero' : num;
+    }
 }
 
 export default Counter;
