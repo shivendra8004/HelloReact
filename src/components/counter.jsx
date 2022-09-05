@@ -4,18 +4,20 @@ class Counter extends Component {
         count: 0,
         imgUrl: "https://picsum.photos/200"
     };
-    // style = {
-    //     fontSize: 20,
-    //     fontWeight: "bold"
-    // }
     render() {
         return (
             <React.Fragment>
-                <span style={{ fontSize: 50 }} className='badge badge-primary m-2'>{this.countOption()}</span>
+                <span className={this.spanClass()}>{this.countOption()}</span>
                 <button className='btn btn-secondary btn-sm'>Increament</button>
             </React.Fragment>
         );
     }
+    spanClass() {
+        let classs = "badge m-2 badge-";
+        classs += this.state.count === 0 ? "warning" : "primary";
+        return classs;
+    }
+
     countOption() {
         let num = this.state.count;
         return num === 0 ? 'Zero' : num;
