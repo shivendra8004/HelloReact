@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 class Counter extends Component {
     state = {
-        tags: ['tag1', 'tag2', 'tag3']
+        tags: []
     };
+    renderTags() {
+        if (this.state.tags.length === 0)
+            return <p>There are no tags present in the array</p>
+
+        return (<ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>);
+    }
     render() {
         return (
             <React.Fragment>
-                <ul>
-                    {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
-                </ul>
+                {this.state.tags.length === 0 && "Please Add Some tags"}
+                {this.renderTags()}
             </React.Fragment>
         );
     }
