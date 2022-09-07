@@ -12,6 +12,7 @@ class Counter extends Component {
             </React.Fragment>
         );
     }
+
     spanClass() {
         let classs = "badge m-2 badge-";
         classs += this.state.count === 0 ? "warning" : "primary";
@@ -23,5 +24,6 @@ class Counter extends Component {
         return num === 0 ? 'Zero' : num;
     }
 }
+
 
 export default Counter;
