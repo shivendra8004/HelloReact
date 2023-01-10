@@ -4,7 +4,7 @@ import React from "react";
 //   return <h1>Hello Shiva</h1>;
 // }
 
-const Greet = () => {
-  return <h1>Hello Shiva</h1>;
+const Greet = (props) => {
+  return <h1>Hello {props.name}</h1>;
 };
 export default Greet;
