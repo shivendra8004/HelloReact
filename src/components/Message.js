@@ -3,7 +3,7 @@ class Message extends Component {
   constructor() {
     super();
     this.state = {
-      message: "Welcome Visitor",
+      message: "Welcome ",
     };
   }
   changedMessage() {
@@ -14,7 +14,10 @@ class Message extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.message}</h1>
+        <h1>
+          {this.state.message}
+          {this.props.name}
+        </h1>
         <button
           onClick={() => {
             this.changedMessage();
