@@ -6,9 +6,12 @@ import React from "react";
 
 const Greet = (props) => {
   return (
-    <h1>
-      Hello {props.name} who's age is {props.age}
-    </h1>
+    <div>
+      <h1>
+        Hello {props.name} who's age is {props.age}
+      </h1>
+      {props.children}
+    </div>
   );
 };
 export default Greet;
