@@ -23,7 +23,7 @@ class Message extends Component {
             this.changedMessage();
           }}
         >
-          Subscribe
+          Subscribe Please
         </button>
       </div>
     );
