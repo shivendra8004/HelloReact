@@ -5,6 +5,7 @@ import React from "react";
 // }
 
 const Greet = (props) => {
+  props.name = "Shivendra";
   return (
     <div>
       <h1>
