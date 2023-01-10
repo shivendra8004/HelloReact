@@ -6,6 +6,10 @@ const Hello = () => {
   //       <h1>Hello Shiv</h1>
   //     </div>
   //   );
-  return React.createElement("div", null, "hello Shiv");
+  return React.createElement(
+    "div",
+    { className: "shiv" },
+    React.createElement("h1", { id: "hi" }, "Hello Shiv")
+  );
 };
 export default Hello;
