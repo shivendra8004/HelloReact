@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 class Welcome extends Component {
   render() {
-    return <h1>Welcome Shivendra</h1>;
+    return (
+      <div>
+        <h1>
+          Welcome {this.props.name} your age is {this.props.age}{" "}
+        </h1>
+        {this.props.children}
+      </div>
+    );
   }
 }
 export default Welcome;
