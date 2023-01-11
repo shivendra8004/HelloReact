@@ -7,6 +7,11 @@ class Greet extends Component {
       message: "Hello ",
     };
   }
+  changeMessage() {
+    this.setState({
+      message: "Thanks for Subscribing ",
+    });
+  }
 
   render() {
     return (
