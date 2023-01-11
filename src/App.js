@@ -3,11 +3,7 @@ import "./App.css";
 import Message from "./components/Message";
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <Message name="Shivendra" />
-      </div>
-    );
+    return <div className="App"></div>;
   }
 }
 export default App;
