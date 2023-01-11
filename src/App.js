@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-import Message from "./components/Message";
+import Greet from "./components/Greet";
 class App extends Component {
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <Greet />
+      </div>
+    );
   }
 }
 export default App;
