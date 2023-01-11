@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Greet = () => {
-  return (
-    <div>
-      <h1>Functional Component</h1>
-    </div>
-  );
-};
+class Greet extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Class Component</h1>
+      </div>
+    );
+  }
+}
 export default Greet;
