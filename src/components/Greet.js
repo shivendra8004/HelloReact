@@ -2,11 +2,12 @@ import React, { Component } from "react";
 
 class Greet extends Component {
   render() {
-    return React.createElement(
-      "div",
-      null,
-      React.createElement("h1", null, "Returning Without JSX")
+    return (
+      <div>
+        <h1>Hello {this.props.name} Using Class Component</h1>
+      </div>
     );
   }
 }
+
 export default Greet;
