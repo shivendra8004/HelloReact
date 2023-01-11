@@ -2,11 +2,7 @@ import React, { Component } from "react";
 
 class Greet extends Component {
   render() {
-    return (
-      <div>
-        <h1>Class Component</h1>
-      </div>
-    );
+    return React.createElement("div", null, "returning html without jsx");
   }
 }
 export default Greet;
