@@ -8,9 +8,8 @@ class Counter extends Component {
     };
   }
   increament() {
-    this.setState({
-      count: this.state.count + 1,
-    });
+    this.state.count = this.state.count + 1;
+    console.log(this.state.count);
   }
   decreament() {
     this.setState({
