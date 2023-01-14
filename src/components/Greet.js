@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Greet = (props) => {
-  const { name, age } = props;
-  return (
-    <div>
-      {name}
-      {age}
-    </div>
-  );
-};
+export class Greet extends Component {
+  render() {
+    const { name, age } = this.props;
+    return (
+      <div>
+        {name} {age}
+      </div>
+    );
+  }
+}
+
 export default Greet;
