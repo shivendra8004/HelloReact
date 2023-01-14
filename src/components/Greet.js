@@ -1,34 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Greet extends Component {
-  constructor() {
-    super();
-    this.state = {
-      message: "Hello ",
-    };
-  }
-  changeMessage() {
-    this.setState({
-      message: "Thanks for Subscribing ",
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>
-          {this.state.message} {this.props.name}
-        </h1>
-        <button
-          onClick={() => {
-            this.changeMessage();
-          }}
-        >
-          Subscribe
-        </button>
-      </div>
-    );
-  }
-}
-
+const Greet = ({ name, age }) => {
+  return (
+    <div>
+      {name}
+      {age}
+    </div>
+  );
+};
 export default Greet;
