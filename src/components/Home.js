@@ -2,7 +2,7 @@ import { useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
+  const [blogs] = useState([
     {
       title: "My new Website",
       body: "Lorem lepsum....",
