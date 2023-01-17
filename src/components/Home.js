@@ -25,18 +25,6 @@ const Home = () => {
       auther: "The Net Ninja",
       id: 4,
     },
-    {
-      title: "The Net Ninja Channel",
-      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "The Net Ninja",
-      id: 5,
-    },
-    {
-      title: "The Net Ninja Channel",
-      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "The Net Ninja",
-      id: 6,
-    },
   ]);
   return (
     <div className="home">
