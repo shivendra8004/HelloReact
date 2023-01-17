@@ -1,8 +1,10 @@
+import React from "react";
+import { useState } from "react";
+
 const Home = () => {
-  let name = "Shivendra Jat";
+  let [name, setName] = useState("Shivendra Jat");
   const handleClick = () => {
-    console.log("Hello Guys");
-    name = "Shiva";
+    setName("Shiva");
   };
   return (
     <div className="home">
