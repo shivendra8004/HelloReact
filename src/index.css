@@ -54,3 +54,9 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+.newBlog {
+  background-color: #f1356d;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
