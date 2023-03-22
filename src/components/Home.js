@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 const Home = () => {
-  let [blogs] = useState([
+  let [blogs, setBlogs] = useState([
     {
       title: "My New Website",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
@@ -25,6 +25,18 @@ const Home = () => {
       auther: "The Net Ninja",
       id: 4,
     },
+    {
+      title: "The Net Ninja Channel",
+      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
+      auther: "The Net Ninja",
+      id: 5,
+    },
+    {
+      title: "The Net Ninja Channel",
+      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
+      auther: "The Net Ninja",
+      id: 6,
+    },
   ]);
   return (
     <div className="home">
@@ -32,7 +44,6 @@ const Home = () => {
         <div className="blog-preview" key={blogs.id}>
           <h2>{blogs.title}</h2>
           <p>{blogs.body} </p>
-          <p>{blogs.auther}</p>
         </div>
       ))}
     </div>
