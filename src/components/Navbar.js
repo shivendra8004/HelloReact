@@ -4,14 +4,7 @@ const Navbar = () => {
       <h1>The Blossom Blogs</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a
-          href="/create"
-          style={{
-            color: "white",
-            backgroundColor: "#f1356d",
-            borderRadius: "8px",
-          }}
-        >
+        <a href="/create" className="newBlog">
           New Blog
         </a>
       </div>
