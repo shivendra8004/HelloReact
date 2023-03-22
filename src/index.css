@@ -31,6 +31,7 @@
 
 .navbar a:hover {
   color: #f1356d;
+  background-color: white;
 }
 
 .content {
@@ -46,7 +47,7 @@
 }
 
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .blog-preview h2 {
