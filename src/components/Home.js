@@ -4,46 +4,46 @@ const Home = () => {
     {
       title: "My New Website",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "Shivendra Jat",
+      author: "Shivendra Jat",
       id: 1,
     },
     {
       title: "Welcome Party ",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "Jyoti Kumari",
+      author: "Jyoti Kumari",
       id: 2,
     },
     {
       title: "Web Dev Tips and Tricks",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "Anindya Ram",
+      author: "Anindya Ram",
       id: 3,
     },
     {
       title: "The Net Ninja Channel",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "The Net Ninja",
+      author: "The Net Ninja",
       id: 4,
     },
     {
       title: "The Net Ninja Channel",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "The Net Ninja",
+      author: "The Net Ninja",
       id: 5,
     },
     {
       title: "The Net Ninja Channel",
       body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      auther: "The Net Ninja",
+      author: "The Net Ninja",
       id: 6,
     },
   ]);
   return (
     <div className="home">
-      {blogs.map((blogs) => (
-        <div className="blog-preview" key={blogs.id}>
-          <h2>{blogs.title}</h2>
-          <p>{blogs.body} </p>
+      {blogs.map((blog) => (
+        <div className="blog-preview" key={blog.id}>
+          <h2>{blog.title}</h2>
+          <p>{blog.author} </p>
         </div>
       ))}
     </div>
