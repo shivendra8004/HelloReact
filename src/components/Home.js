@@ -25,25 +25,13 @@ const Home = () => {
       author: "The Net Ninja",
       id: 4,
     },
-    {
-      title: "The Net Ninja Channel",
-      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      author: "The Net Ninja",
-      id: 5,
-    },
-    {
-      title: "The Net Ninja Channel",
-      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
-      author: "The Net Ninja",
-      id: 6,
-    },
   ]);
   return (
     <div className="home">
       {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
-          <p>{blog.author} </p>
+          <p>Written by {blog.author} </p>
         </div>
       ))}
     </div>
