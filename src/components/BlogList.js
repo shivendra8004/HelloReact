@@ -1,4 +1,5 @@
 const BlogList = ({ blogs, heading }) => {
+  const handleSubmit = () => {};
   return (
     <div className="blog-list">
       <h2>{heading}</h2>
@@ -6,6 +7,9 @@ const BlogList = ({ blogs, heading }) => {
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
+          <div>
+            <button onClick={() => handleSubmit}>Delete</button>
+          </div>
         </div>
       ))}
     </div>
