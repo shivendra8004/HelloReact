@@ -39,10 +39,10 @@ const Home = () => {
       id: 6,
     },
   ]);
+  const handleSubmit = (id) => {};
   return (
     <div className="home">
       <BlogList blogs={blogs} heading={"All Blogs"} />
-      <BlogList blogs={blogs.filter((blog) => blog.author === "Shivendra Jat")} heading={"Shivendra's Blogs"} />
     </div>
   );
 };

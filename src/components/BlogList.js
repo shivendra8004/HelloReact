@@ -1,5 +1,4 @@
 const BlogList = ({ blogs, heading }) => {
-  const handleSubmit = (id) => {};
   return (
     <div className="blog-list">
       <h2>{heading}</h2>
