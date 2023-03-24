@@ -46,8 +46,8 @@ const Home = () => {
   };
   useEffect(() => {
     console.log("Use Effect");
-    console.log(blogs);
-  }, []);
+    console.log(name);
+  }, [name]);
   return (
     <div className="home">
       <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />
