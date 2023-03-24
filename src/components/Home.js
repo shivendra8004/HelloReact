@@ -26,10 +26,23 @@ const Home = () => {
       author: "The Net Ninja",
       id: 4,
     },
+    {
+      title: "Web Dev Course",
+      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
+      author: "Shivendra Jat",
+      id: 5,
+    },
+    {
+      title: "FSD Bootcamp",
+      body: " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
+      author: "Shivendra Jat",
+      id: 6,
+    },
   ]);
   return (
     <div className="home">
       <BlogList blogs={blogs} heading={"All Blogs"} />
+      <BlogList blogs={blogs} heading={"Shivendra's Blogs"} />
     </div>
   );
 };
