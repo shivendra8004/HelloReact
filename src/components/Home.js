@@ -39,6 +39,7 @@ const Home = () => {
       id: 6,
     },
   ]);
+  const [name, setName] = useState("Shivendra");
   const handleDelete = (id) => {
     const newBlogs = blogs.filter((blog) => blog.id !== id);
     setBlogs(newBlogs);
@@ -50,6 +51,14 @@ const Home = () => {
   return (
     <div className="home">
       <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />
+      <button
+        onClick={() => {
+          setName("Shiva");
+        }}
+      >
+        Click
+      </button>
+      <p>{name}</p>
     </div>
   );
 };
