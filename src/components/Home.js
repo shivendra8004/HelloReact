@@ -45,6 +45,7 @@ const Home = () => {
   };
   useEffect(() => {
     console.log("Use Effect");
+    console.log(blogs);
   });
   return (
     <div className="home">
