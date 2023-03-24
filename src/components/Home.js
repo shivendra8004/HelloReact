@@ -39,10 +39,10 @@ const Home = () => {
       id: 6,
     },
   ]);
-  const handleSubmit = (id) => {};
+  const handleDelete = (id) => {};
   return (
     <div className="home">
-      <BlogList blogs={blogs} heading={"All Blogs"} />
+      <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />
     </div>
   );
 };
