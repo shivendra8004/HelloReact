@@ -42,12 +42,7 @@ const Home = () => {
   return (
     <div className="home">
       <BlogList blogs={blogs} heading={"All Blogs"} />
-      <BlogList
-        blogs={blogs.filter((blog) => {
-          blog.author = "Shivendra Jat";
-        })}
-        heading={"Shivendra's Blogs"}
-      />
+      <BlogList blogs={blogs.filter((blog) => blog.author === "Shivendra Jat")} heading={"Shivendra's Blogs"} />
     </div>
   );
 };
