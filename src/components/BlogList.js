@@ -1,5 +1,5 @@
 const BlogList = ({ blogs, heading }) => {
-  const handleSubmit = () => {};
+  const handleSubmit = (id) => {};
   return (
     <div className="blog-list">
       <h2>{heading}</h2>
@@ -8,7 +8,7 @@ const BlogList = ({ blogs, heading }) => {
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
           <div>
-            <button onClick={() => handleSubmit}>Delete</button>
+            <button onClick={() => handleSubmit(blog.id)}>Delete</button>
           </div>
         </div>
       ))}
