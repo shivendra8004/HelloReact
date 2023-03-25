@@ -16,9 +16,7 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="home">
-      <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />
-    </div>
+    <div className="home">{/* <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} /> */}</div>
   );
 };
 export default Home;
