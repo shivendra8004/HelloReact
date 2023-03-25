@@ -7,7 +7,11 @@ const Home = () => {
     setBlogs(newBlogs);
   };
   useEffect(() => {
-    console.log("Use Effect");
+    fetch("http://localhost:5500/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {});
   }, []);
   return (
     <div className="home">
