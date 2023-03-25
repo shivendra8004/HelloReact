@@ -11,7 +11,9 @@ const Home = () => {
       .then((res) => {
         return res.json();
       })
-      .then((data) => {});
+      .then((data) => {
+        console.log(data);
+      });
   }, []);
   return (
     <div className="home">
