@@ -5,16 +5,14 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      fetch("http://localhost:5500/blogs")
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          setBlogs(data);
-          setLoading(false);
-        });
-    }, 1000);
+    fetch("http://localhost:5500/blogs")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+        setLoading(false);
+      });
   }, []);
   return (
     <div className="home">
