@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 const Home = () => {
   let [blogs, setBlogs] = useState(null);
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
   useEffect(() => {
     fetch("http://localhost:5500/blogs")
       .then((res) => {
@@ -16,8 +12,6 @@ const Home = () => {
         setBlogs(data);
       });
   }, []);
-  return (
-    <div className="home">{blogs && <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />}</div>
-  );
+  return <div className="home">{blogs && <BlogList blogs={blogs} heading={"All Blogs"} />}</div>;
 };
 export default Home;
