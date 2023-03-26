@@ -16,10 +16,6 @@ const Home = () => {
         setBlogs(data);
       });
   }, []);
-  return (
-    <div className="home">
-      <BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />
-    </div>
-  );
+  return <div className="home">{<BlogList blogs={blogs} heading={"All Blogs"} handleDelete={handleDelete} />}</div>;
 };
 export default Home;
