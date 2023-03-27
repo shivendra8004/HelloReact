@@ -10,6 +10,7 @@ const Home = () => {
       .then((res) => {
         console.log(res);
         if (!res.ok) {
+          setError("Could not fetch data from database");
           throw Error("Could not fetch data from database");
         }
         return res.json();
@@ -19,13 +20,12 @@ const Home = () => {
         setLoading(false);
       })
       .catch((error) => {
-        console.log(error);
+        setError(error);
       });
   }, []);
   return (
     <div className="home">
       {loading && <div>Loading Blogs...</div>}
-
       {blogs && <BlogList blogs={blogs} heading={"All Blogs"} />}
     </div>
   );
