@@ -7,6 +7,7 @@ const Home = () => {
     setLoading(true);
     fetch("http://localhost:5500/blogs")
       .then((res) => {
+        console.log(res);
         return res.json();
       })
       .then((data) => {
