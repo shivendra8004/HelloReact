@@ -28,8 +28,7 @@ const Home = () => {
       {error && <div>There is any Error...</div>}
 
       {loading && <div>Loading Blogs...</div>}
-      {/* {error && setBlogs(null)} */}
-      {blogs && <BlogList blogs={blogs} heading={"All Blogs"} />}
+      {blogs && !error && <BlogList blogs={blogs} heading={"All Blogs"} />}
     </div>
   );
 };
