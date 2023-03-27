@@ -25,8 +25,10 @@ const Home = () => {
   }, []);
   return (
     <div className="home">
-      {error && <div>There is any Error... for more details check console</div>}
+      {error && <div>There is any Error...</div>}
+
       {loading && <div>Loading Blogs...</div>}
+      {/* {error && setBlogs(null)} */}
       {blogs && <BlogList blogs={blogs} heading={"All Blogs"} />}
     </div>
   );
