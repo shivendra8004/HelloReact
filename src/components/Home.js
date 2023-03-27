@@ -12,6 +12,9 @@ const Home = () => {
       .then((data) => {
         setBlogs(data);
         setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
   return (
