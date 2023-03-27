@@ -8,9 +8,9 @@ const Home = () => {
     fetch("http://localhost:5500/blogs")
       .then((res) => {
         console.log(res);
-        if (res.ok) {
-          return res.json();
+        if (!res.ok) {
         }
+        return res.json();
       })
       .then((data) => {
         setBlogs(data);
