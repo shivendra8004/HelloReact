@@ -9,6 +9,7 @@ const Home = () => {
       .then((res) => {
         console.log(res);
         if (!res.ok) {
+          throw Error("Could not fetch data from database");
         }
         return res.json();
       })
