@@ -6,7 +6,7 @@ const Home = () => {
   const [error, setError] = useState(null);
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5500/blogsd")
+    fetch("http://localhost:5500/blogs")
       .then((res) => {
         console.log(res);
         if (!res.ok) {
@@ -17,6 +17,7 @@ const Home = () => {
       .then((data) => {
         setBlogs(data);
         setLoading(false);
+        setError(null);
       })
       .catch((error) => {
         setError(error.message);
