@@ -26,7 +26,7 @@ const Home = () => {
     <div className="home">
       {error && <div className="errorDiv "> {error}</div>}
 
-      {loading && <div>Loading Blogs...</div>}
+      {loading && <div className="loadingDiv">Loading Blogs...</div>}
       {blogs && !error && <BlogList blogs={blogs} heading={"All Blogs"} />}
     </div>
   );
