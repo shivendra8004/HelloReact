@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 const useFetch = () => {
   const [blogs, setBlogs] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -22,3 +23,5 @@ const useFetch = () => {
       });
   }, []);
 };
+
+export default useFetch;
