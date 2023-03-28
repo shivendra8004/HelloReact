@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-const useFetch = () => {
-  const [blogs, setBlogs] = useState(null);
+const useFetch = (url) => {
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5500/blogs")
+    fetch(url)
       .then((res) => {
         console.log(res);
         if (!res.ok) {
@@ -14,7 +14,7 @@ const useFetch = () => {
         return res.json();
       })
       .then((data) => {
-        setBlogs(data);
+        setData(data);
         setLoading(false);
         setError(null);
       })
@@ -22,6 +22,7 @@ const useFetch = () => {
         setError(error.message);
       });
   }, []);
+  return { data, loading, error };
 };
 
 export default useFetch;
