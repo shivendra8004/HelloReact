@@ -20,6 +20,9 @@ const useFetch = (url) => {
       .catch((error) => {
         setError(error.message);
       });
+    return () => {
+      console.log("Clean Up");
+    };
   }, [url]);
   return { data, loading, error };
 };
