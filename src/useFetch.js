@@ -20,8 +20,12 @@ const useFetch = (url) => {
         setError(null);
       })
       .catch((error) => {
-        setLoading(false);
-        setError(error.message);
+        if (error.name === "AbortError") {
+          console.log("Fetch Aborted");
+        } else {
+          setLoading(false);
+          setError(error.message);
+        }
       });
     return () => {
       abortConst.abort();
