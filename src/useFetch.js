@@ -7,7 +7,6 @@ const useFetch = (url) => {
     setLoading(true);
     fetch(url)
       .then((res) => {
-        console.log(res);
         if (!res.ok) {
           throw Error("Could not fetch data from database");
         }
