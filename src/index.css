@@ -55,6 +55,9 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+.blog-list a {
+  text-decoration: none;
+}
 .errorDiv {
   font-weight: bold;
   font-size: 1.5rem;
