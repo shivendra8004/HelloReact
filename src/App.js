@@ -5,7 +5,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Switch>
+          <Route path="/nav">
+            <Navbar />
+          </Route>
+        </Switch>
         <div className="content">
           <Switch>
             <Route path="/">
