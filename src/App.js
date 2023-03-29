@@ -5,11 +5,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
-          <Route path="/nav">
-            <Navbar />
-          </Route>
-        </Switch>
+        <Navbar />
         <div className="content">
           <Switch>
             <Route path="/">
