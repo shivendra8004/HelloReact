@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data, error, loading } = useFetch("http://localhost:5500/blogs/");
+  const { data: blog, error, loading } = useFetch("http://localhost:5500/blogs/" + id);
   return (
     <>
       <div>
