@@ -5,10 +5,8 @@ const BlogDetails = () => {
   const { data: blog, error, loading } = useFetch("http://localhost:5500/blogs/" + id);
   return (
     <>
-      <div>
-        <h2>Blog Details</h2>
-        <p>Blog Number {id} </p>
-      </div>
+      {loading && <div>Loading...</div>}
+      {error && <div>{error}</div>}
     </>
   );
 };
