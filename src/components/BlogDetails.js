@@ -7,6 +7,7 @@ const BlogDetails = () => {
     <>
       {loading && <div>Loading...</div>}
       {error && <div>{error}</div>}
+      {blog && <div>{blog.title}</div>}
     </>
   );
 };
