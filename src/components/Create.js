@@ -1,13 +1,20 @@
 import { useState } from "react";
 
 const Create = () => {
-  const [title, setTitle] = useState("hii");
+  const [title, setTitle] = useState("Title of Blog!");
   return (
     <div className="create">
       <h2>Create a New Blog!</h2>
       <form>
         <label>Blog Title</label>
-        <input type="text" required value={title} />
+        <input
+          type="text"
+          required
+          value={title}
+          onChange={(e) => {
+            setTitle(e.target.value);
+          }}
+        />
         <label>Author</label>
         <select>
           <option value="shivendra">Shivendra Jat</option>
