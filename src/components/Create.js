@@ -24,7 +24,15 @@ const Create = () => {
           <option value="other">Other</option>
         </select>
         <label>Write your blog</label>
-        <textarea required cols="30" rows="10"></textarea>
+        <textarea
+          required
+          cols="30"
+          rows="10"
+          value={blog}
+          onChange={(e) => {
+            setBlog(e.target.value);
+          }}
+        ></textarea>
         <button type="submit"> Done</button>
       </form>
     </div>
