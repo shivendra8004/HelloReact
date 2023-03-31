@@ -1,10 +1,13 @@
+import { useState } from "react";
+
 const Create = () => {
+  const [title, setTitle] = useState("hii");
   return (
     <div className="create">
       <h2>Create a New Blog!</h2>
       <form>
         <label>Blog Title</label>
-        <input type="text" required />
+        <input type="text" required value={title} />
         <label>Author</label>
         <select>
           <option value="shivendra">Shivendra Jat</option>
