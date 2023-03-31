@@ -2,19 +2,20 @@ import { useState } from "react";
 
 const Create = () => {
   const [title, setTitle] = useState("Title of Blog!");
-  const [blog, setBlog] = useState("Write your best blog here!");
+  const [body, setBlog] = useState("Write your best blog here!");
   const [author, setAuthor] = useState("jyoti");
   const HandleSubmit = (e) => {
-    console.log();
+    e.preventDefault();
+    const blog = {
+      title,
+      body,
+      author,
+    };
   };
   return (
     <div className="create">
       <h2>Create a New Blog!</h2>
-      <form
-        onSubmit={() => {
-          HandleSubmit();
-        }}
-      >
+      <form onSubmit={HandleSubmit}>
         <label>Blog Title</label>
         <input
           type="text"
@@ -41,7 +42,7 @@ const Create = () => {
           required
           cols="30"
           rows="10"
-          value={blog}
+          value={body}
           onChange={(e) => {
             setBlog(e.target.value);
           }}
