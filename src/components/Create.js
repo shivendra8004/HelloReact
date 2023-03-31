@@ -10,9 +10,7 @@ const Create = () => {
           <option value="shivendra">Shivendra Jat</option>
           <option value="jyoti">Jyoti Kumari</option>
           <option value="anandi">Anindya Ram Tripathi</option>
-          <option contentEditable value="other">
-            <input type="text" />
-          </option>
+          <option value="other">Other</option>
         </select>
         <label>Write your blog</label>
         <textarea required cols="30" rows="10"></textarea>
