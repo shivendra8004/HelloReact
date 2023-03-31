@@ -11,6 +11,7 @@ const Create = () => {
       body,
       author,
     };
+    console.log(blog);
   };
   return (
     <div className="create">
