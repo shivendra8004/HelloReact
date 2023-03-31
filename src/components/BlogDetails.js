@@ -10,6 +10,8 @@ const BlogDetails = () => {
       {blog && (
         <article>
           <h2>{blog.title}</h2>
+          <h3>Written by {blog.author}</h3>
+          <p>{blog.body}</p>
         </article>
       )}
     </>
