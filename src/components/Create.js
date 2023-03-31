@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Create = () => {
   const [title, setTitle] = useState("Title of Blog!");
+  const [blog, setBlog] = useState("Write your best blog here!");
   return (
     <div className="create">
       <h2>Create a New Blog!</h2>
