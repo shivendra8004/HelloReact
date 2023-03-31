@@ -34,6 +34,7 @@ const Create = () => {
           }}
         ></textarea>
         <button type="submit"> Done</button>
+        <p>{title}</p>
       </form>
     </div>
   );
