@@ -4,7 +4,7 @@ const BlogDetails = () => {
   const { id } = useParams();
   const { data: blog, error, loading } = useFetch("http://localhost:5500/blogs/" + id);
   return (
-    <>
+    <div className="blog-details">
       {loading && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {blog && (
@@ -14,7 +14,7 @@ const BlogDetails = () => {
           <p>{blog.body}</p>
         </article>
       )}
-    </>
+    </div>
   );
 };
 
