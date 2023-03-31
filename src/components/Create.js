@@ -1,10 +1,12 @@
 const Create = () => {
   return (
-    <>
-      <div>
-        <h1>New Blog</h1>
-      </div>
-    </>
+    <div className="create">
+      <h2>Create a New Blog!</h2>
+      <form>
+        <label>Blog Title</label>
+        <input type="text" name="Blog Title" />
+      </form>
+    </div>
   );
 };
 
