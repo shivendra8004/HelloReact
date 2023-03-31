@@ -3,7 +3,7 @@ import { useState } from "react";
 const Create = () => {
   const [title, setTitle] = useState("Title of Blog!");
   const [blog, setBlog] = useState("Write your best blog here!");
-  const [author, setAuthor] = useState("shivendra");
+  const [author, setAuthor] = useState("jyoti");
   return (
     <div className="create">
       <h2>Create a New Blog!</h2>
@@ -18,7 +18,12 @@ const Create = () => {
           }}
         />
         <label>Author</label>
-        <select>
+        <select
+          value={author}
+          onChange={(e) => {
+            setAuthor(e.target.value);
+          }}
+        >
           <option value="shivendra">Shivendra Jat</option>
           <option value="jyoti">Jyoti Kumari</option>
           <option value="anandi">Anindya Ram Tripathi</option>
