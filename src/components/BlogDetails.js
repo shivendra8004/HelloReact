@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 import { useState } from "react";
 const BlogDetails = () => {
   const [deleting, setDeleting] = useState(false);
+  const history = useHistory();
   const { id } = useParams();
   const { data: blog, error, loading } = useFetch("http://localhost:5500/blogs/" + id);
   const HandleDelete = (id) => {
@@ -13,6 +14,7 @@ const BlogDetails = () => {
       .then(() => {
         console.log("Blog deleted");
         setDeleting(false);
+        history.push("/");
       })
       .catch((error) => {
         console.log(error);
