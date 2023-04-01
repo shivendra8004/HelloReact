@@ -11,7 +11,11 @@ const Create = () => {
       body,
       author,
     };
-    console.log(blog);
+    fetch("http://localhost:5500/blogs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    });
   };
   return (
     <div className="create">
