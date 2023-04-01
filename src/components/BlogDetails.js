@@ -4,11 +4,15 @@ const BlogDetails = () => {
   const { id } = useParams();
   const { data: blog, error, loading } = useFetch("http://localhost:5500/blogs/" + id);
   const HandleDelete = (id) => {
-    fetch("http://localhost:5500/blogs/" + id, {
+    fetch("http://localhost:5500/blogs/" + blog.id, {
       method: "DELETE",
-    }).then(() => {
-      console.log("Blog deleted");
-    });
+    })
+      .then(() => {
+        console.log("Blog deleted");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <div className="blog-details">
