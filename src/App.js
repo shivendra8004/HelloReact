@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/blogs/:id">
               <BlogDetails />
             </Route>
-            <Route>
+            <Route path="*">
               <Error />
             </Route>
           </Switch>
