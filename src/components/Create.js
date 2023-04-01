@@ -15,9 +15,13 @@ const Create = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
-    }).then(() => {
-      console.log("New Blog Added");
-    });
+    })
+      .then(() => {
+        console.log("New Blog Added");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <div className="create">
