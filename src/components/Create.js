@@ -6,7 +6,6 @@ const Create = () => {
   const [author, setAuthor] = useState("jyoti");
   const [loading, setLoading] = useState(false);
   const history = useHistory();
-  console.log(history);
   const HandleSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
@@ -23,6 +22,7 @@ const Create = () => {
       .then(() => {
         setLoading(false);
         console.log("New Blog Added");
+        history.go(-1);
       })
       .catch((error) => {
         setLoading(false);
