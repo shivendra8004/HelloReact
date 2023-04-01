@@ -22,7 +22,7 @@ const Create = () => {
       .then(() => {
         setLoading(false);
         console.log("New Blog Added");
-        history.go(-1);
+        history.push("/");
       })
       .catch((error) => {
         setLoading(false);
