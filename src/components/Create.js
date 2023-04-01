@@ -6,28 +6,26 @@ const Create = () => {
   const [author, setAuthor] = useState("jyoti");
   const [loading, setLoading] = useState(false);
   const HandleSubmit = (e) => {
-    setTimeout(() => {
-      setLoading(true);
-      e.preventDefault();
-      const blog = {
-        title,
-        body,
-        author,
-      };
-      fetch("http://localhost:5500/blogs", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(blog),
+    setLoading(true);
+    e.preventDefault();
+    const blog = {
+      title,
+      body,
+      author,
+    };
+    fetch("http://localhost:5500/blogs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    })
+      .then(() => {
+        setLoading(false);
+        console.log("New Blog Added");
       })
-        .then(() => {
-          setLoading(false);
-          console.log("New Blog Added");
-        })
-        .catch((error) => {
-          setLoading(false);
-          console.log(error);
-        });
-    }, 5000);
+      .catch((error) => {
+        setLoading(false);
+        console.log(error);
+      });
   };
   return (
     <div className="create">
