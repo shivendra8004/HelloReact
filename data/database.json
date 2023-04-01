@@ -35,6 +35,18 @@
       "body": " wqeuher qwotjdaf asfhp wet wqea hgdfdsk ew glaff hgel  ",
       "author": "Shivendra Jat",
       "id": 6
+    },
+    {
+      "title": "Learning hoe to add post req in Json server",
+      "body": "I am writing this blog while learning how to send post req to the json server\n",
+      "author": "shivendra",
+      "id": 7
+    },
+    {
+      "title": "Title of Blog!",
+      "body": "Write your best blog here!",
+      "author": "jyoti",
+      "id": 8
     }
   ]
 }

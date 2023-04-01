@@ -4,7 +4,9 @@ const Create = () => {
   const [title, setTitle] = useState("Title of Blog!");
   const [body, setBlog] = useState("Write your best blog here!");
   const [author, setAuthor] = useState("jyoti");
+  const [loading, setLoading] = useState(false);
   const HandleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     const blog = {
       title,
@@ -17,9 +19,11 @@ const Create = () => {
       body: JSON.stringify(blog),
     })
       .then(() => {
+        setLoading(false);
         console.log("New Blog Added");
       })
       .catch((error) => {
+        setLoading(false);
         console.log(error);
       });
   };
@@ -60,6 +64,7 @@ const Create = () => {
         ></textarea>
         <button type="submit"> Done</button>
       </form>
+      {loading && <div>Saving...</div>}
     </div>
   );
 };
