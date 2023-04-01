@@ -62,7 +62,8 @@ const Create = () => {
             setBlog(e.target.value);
           }}
         ></textarea>
-        <button type="submit"> Done</button>
+        {loading && <button> Loading...</button>}
+        {!loading && <button> Submit</button>}
       </form>
       {loading && <div>Saving...</div>}
     </div>
