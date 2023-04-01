@@ -35,30 +35,6 @@
       "body": "I am writing this blog while learning how to send post req to the json server\n",
       "author": "shivendra",
       "id": 7
-    },
-    {
-      "title": "Title of Blog!",
-      "body": "Write your best blog here!",
-      "author": "jyoti",
-      "id": 14
-    },
-    {
-      "title": "Title of Blog!",
-      "body": "Write your best blog here!",
-      "author": "jyoti",
-      "id": 16
-    },
-    {
-      "title": "Title of Blog!",
-      "body": "Write your best blog here!",
-      "author": "jyoti",
-      "id": 17
-    },
-    {
-      "title": "Title of Blog!",
-      "body": "Write your best blog here!",
-      "author": "jyoti",
-      "id": 18
     }
   ]
 }
