@@ -14,7 +14,7 @@ const BlogList = ({ blogs, heading }) => {
           </Link>
         ))
       ) : (
-        <div>
+        <div className="warning">
           <h2>No Posts</h2>
           <p>The posts you create will show up here!</p>
         </div>

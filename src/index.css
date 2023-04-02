@@ -119,3 +119,9 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* Extraa css */
+.warning {
+  margin: 8rem;
+  text-align: center;
+}
