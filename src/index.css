@@ -114,6 +114,11 @@
   box-sizing: border-box;
   display: block;
 }
+.create div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .create button {
   background: #f1356d;
   color: #fff;
