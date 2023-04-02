@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 const Create = () => {
   const [title, setTitle] = useState("Title of Blog!");
   const [body, setBlog] = useState("Write your best blog here!");
@@ -64,6 +64,7 @@ const Create = () => {
             setBlog(e.target.value);
           }}
         ></textarea>
+        <Link to="/">Home</Link>
         {loading && <button disabled> Publishing...</button>}
         {!loading && <button> Publish</button>}
       </form>

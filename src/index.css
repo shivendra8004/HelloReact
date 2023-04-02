@@ -30,14 +30,10 @@
   margin-left: 3rem;
   text-decoration: none;
   padding: 6px 28px;
-  background-color: #f1356d;
-  color: #fff;
-  border-radius: 50px;
 }
 
-.navbar a:hover {
+.navbar a:active {
   color: #f1356d;
-  background-color: white;
 }
 
 .content {
