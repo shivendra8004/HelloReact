@@ -5,7 +5,7 @@
   font-family: "Quicksand";
   color: #333;
 }
-
+/* Navbar CSS */
 .navbar {
   padding: 20px;
   display: flex;
@@ -26,10 +26,21 @@
   margin-right: 1rem;
 }
 
-.navbar a {
+.navbar a:nth-child(1) {
   margin-left: 3rem;
   text-decoration: none;
-  padding: 6px;
+  padding: 6px 28px;
+  background-color: #f1356d;
+  color: #fff;
+  border-radius: 50px;
+}
+.navbar a:nth-child(2) {
+  margin-left: 3rem;
+  text-decoration: none;
+  padding: 6px 9px;
+  background-color: #f1356d;
+  color: #fff;
+  border-radius: 50px;
 }
 
 .navbar a:hover {
