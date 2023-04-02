@@ -4,7 +4,7 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>The Blossom Blogs</h1>
       <div className="links">
-        <Link to="/">Home</Link>
+        <button>Filter</button>
         <Link to="/create">New Post</Link>
       </div>
     </nav>
