@@ -64,9 +64,13 @@ const Create = () => {
             setBlog(e.target.value);
           }}
         ></textarea>
-        <Link to="/">Home</Link>
-        {loading && <button disabled> Publishing...</button>}
-        {!loading && <button> Publish</button>}
+        <div>
+          <Link className="link" to="/">
+            Home
+          </Link>
+          {loading && <button disabled> Publishing...</button>}
+          {!loading && <button> Publish</button>}
+        </div>
       </form>
     </div>
   );
