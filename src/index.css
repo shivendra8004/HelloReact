@@ -21,13 +21,13 @@
 
 .navbar .links {
   margin-left: auto;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1rem;
-  gap: 2rem;
+  margin-right: 1rem;
 }
 
 .navbar a {
-  margin-left: 16px;
+  margin-left: 3rem;
   text-decoration: none;
   padding: 6px;
 }
