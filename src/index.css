@@ -21,6 +21,9 @@
 
 .navbar .links {
   margin-left: auto;
+  font-weight: bold;
+  font-size: 1.1rem;
+  gap: 2rem;
 }
 
 .navbar a {
